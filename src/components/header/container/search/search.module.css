@@ -16,13 +16,13 @@
     justify-content: space-between;
 }
 
-.input__container{
+.input__container {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.form input{
+.form input {
     background-color: inherit;
     border: none;
     outline: none;
@@ -40,7 +40,17 @@
 }
 
 @media screen and (max-width:720px) {
-    .form input{
+    .form input {
         font-size: 16px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form input {
+        width: 150px;
     }
 }

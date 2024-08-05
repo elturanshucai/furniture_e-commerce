@@ -57,7 +57,7 @@
     gap: 22px;
 }
 
-a {
+.mobile__header ul a {
     padding: 14px 0;
 }
 
