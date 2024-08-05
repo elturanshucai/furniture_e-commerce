@@ -1,0 +1,90 @@
+.header__container {
+    position: absolute;
+    top: -700px;
+    transition: all 500ms;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__container.open {
+    top: 0;
+    transition: all 500ms;
+    height: 100%;
+}
+
+.header__container.open .mobile__header {
+    position: fixed;
+    top: 0;
+}
+
+.mobile__header {
+    width: 100%;
+    background-color: var(--bg-main);
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    height: 568px;
+}
+
+.mobile__navbar {
+    display: block;
+    width: 100%;
+}
+
+.mobile__navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.mobile__navbar a {
+    font-size: 32px;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+a {
+    padding: 14px 0;
+}
+
+.mobile__lang {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--dusty-rose);
+}
+
+.mobile__lang button {
+    flex: 1;
+    border: none;
+    padding: 14px 0;
+    transition: all 300ms;
+}
+
+.mobile__lang button.active {
+    background-color: var(--dusty-rose);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+@media screen and (min-width:720px) {
+    .header__container {
+        display: none;
+    }
+}

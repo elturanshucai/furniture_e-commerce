@@ -4,18 +4,34 @@
   box-sizing: border-box;
 }
 
-:root{
-  --bg-blue: #eef1fc;
-  --bg-footer: #e2e7fa;
-  --button: #597fe2;
-  --text: #6D7593;
+:root {
+  --bg-main: #EAE6DF;
+  --dusty-rose: #D4C8BE;
+  --primary: #B8926A;
+  --black: #2D2D2B;
 }
 
-ul{
-  list-style: none;
+@font-face {
+  font-family: 'Didot Bold';
+  src: url('./assets/fonts/didot/Didot-Bold.otf');
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
+@font-face {
+  font-family: 'Didot';
+  src: url('./assets/fonts/didot/Didot.otf');
+}
+
+@font-face {
+  font-family: 'Didot Title';
+  src: url('./assets/fonts/didot/Didot-Title.otf');
+}
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('./assets/fonts/Raleway/static/Raleway-Medium.ttf')
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway/static/Raleway-Regular.ttf');
 }

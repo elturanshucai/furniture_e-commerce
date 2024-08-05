@@ -1,9 +1,14 @@
-import React from 'react'
-import styles from './header.module.css'
+import React, { useState } from 'react'
+import MobileHeader from './container/mobile_header/MobileHeader'
+import MainHeader from './container/main_header/MainHeader'
 
 const Header = () => {
+  const [menu, setMenu] = useState(false)
   return (
-    <header>Header</header>
+    <>
+      <MainHeader setMenu={setMenu} />
+      <MobileHeader menu={menu} setMenu={setMenu} />
+    </>
   )
 }
 

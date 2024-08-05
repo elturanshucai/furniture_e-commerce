@@ -1,0 +1,111 @@
+header {
+    font-family: 'Raleway';
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: 25px;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+button.lang {
+    border: 1px solid var(--dusty-rose);
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.search__button {
+    font-size: 20px;
+}
+
+.title {
+    font-family: 'Didot Title';
+    font-size: 36px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+nav {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    gap: 70px;
+}
+
+a {
+    transition: all 250ms;
+}
+
+.burger__button{
+    display: none;
+}
+
+.active__link {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:720px) {
+    .header{
+        padding-inline: 16px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: var(--bg-main);
+        border-bottom: 1px solid var(--dusty-rose);
+    }
+    .burger__button{
+        display: block;
+    }
+
+    button.lang{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .top{
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    .left{
+        gap: 25px;
+    }
+
+    .active__link{
+        border-bottom: 1px solid var( --primary);
+    }
+}
