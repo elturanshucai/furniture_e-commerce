@@ -24,6 +24,8 @@
     display: flex;
     flex-direction: column;
     height: 568px;
+    top: -500px;
+    transition: all 300ms;
 }
 
 .mobile__navbar {
