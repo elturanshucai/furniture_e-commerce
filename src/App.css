@@ -13,7 +13,7 @@ a {
     color: inherit;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -21,4 +21,50 @@ button{
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
+}
+
+.swiper-wrapper {
+    padding-bottom: 100px;
+}
+
+/* scrollbar */
+
+.swiper-scrollbar {
+    background: var(--dusty-rose) !important;
+}
+
+.swiper-scrollbar-drag {
+    background-color: var(--primary) !important;
+}
+
+/* pagination */
+
+.swiper-pagination{
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--grey) !important;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary) !important;
+    width: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width:720px) {
+    .swiper-pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-scrollbar{
+        display: none;
+    }
+    .swiper-wrapper{
+        padding-bottom: 50px;
+    }
 }

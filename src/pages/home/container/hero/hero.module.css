@@ -46,6 +46,7 @@
         position: static;
         padding: 0 16px;
         width: 100%;
+        height: auto;
     }
     .hero__image img{
         object-fit: cover;
