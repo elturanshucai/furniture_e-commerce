@@ -1,0 +1,73 @@
+.about {
+    padding: 120px 0 140px;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-family: 'Didot Title';
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    gap: 60px;
+}
+
+.image {
+    flex: 6;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 5;
+}
+
+.learn {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 330px;
+    padding: 18px 0;
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 300ms;
+}
+
+.learn:hover {
+    background-color: var(--primary);
+    color: var(--bg-main);
+}
+
+@media screen and (max-width:900px) {
+    .about{
+        padding: 70px 0;
+    }
+    .title{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .content{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .image{
+        flex: 1;
+    }
+    .image img{
+        height: auto;
+        max-height: 500px;
+    }
+    .text{
+        flex: 1;
+    }
+}
