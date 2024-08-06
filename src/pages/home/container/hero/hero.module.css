@@ -1,0 +1,69 @@
+.hero{
+    display: flex;
+    position: relative;
+    height: 750px;
+    z-index: 3;
+}
+
+.hero__left{
+    padding: 120px 30px;
+    width: 60%;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero__left p{
+    max-width: 440px;
+}
+
+.hero__image{
+    position: absolute;
+    right: 0;
+    height: 750px;
+    width: 60%;
+}
+
+.hero__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero__title{
+    font-family: 'Didot Title';
+    font-size: 72px;
+    line-height: 86px;
+}
+
+@media screen and (max-width:1024px) {
+    .hero{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .hero__image{
+        position: static;
+        padding: 0 16px;
+        width: 100%;
+    }
+    .hero__image img{
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .hero__left{
+        background-color: inherit;
+        width: 100%;
+        gap: 30px;
+        padding: 50px 16px;
+        align-items: center;
+    }
+    .hero__left p{
+        text-align:center;
+    }
+    .hero__title{
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+    }
+}
