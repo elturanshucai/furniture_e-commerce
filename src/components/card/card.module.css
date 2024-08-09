@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 300px;
     min-width: 300px;
+    position: relative;
+    cursor: pointer;
 }
 
 .img {
@@ -28,4 +30,18 @@
     font-size: 20px;
     font-weight: 700;
     color: var(--primary);
+}
+
+.like__button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: var(--primary);
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
