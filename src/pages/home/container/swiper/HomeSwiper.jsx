@@ -57,8 +57,6 @@ const HomeSwiper = () => {
                 pagination={{
                     type: "bullets",
                     clickable: true,
-                    // bulletClass: 'swiper__bullet',
-                    // bulletActiveClass: 'swiper__active__bullet'
                 }}
                 breakpoints={{
                     700: {

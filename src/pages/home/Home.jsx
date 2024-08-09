@@ -5,15 +5,18 @@ import HomeSwiper from './container/swiper/HomeSwiper'
 import AboutSection from './container/about/AboutSection'
 import DiscountSection from './container/discount/DiscountSection'
 import Products from './container/products/Products'
+import MostPopular from './container/popular/MostPopular'
+
 
 const Home = () => {
   return (
     <>
       <Hero />
       <HomeSwiper />
-      <AboutSection />  
+      <AboutSection />
       <DiscountSection />
       <Products />
+      <MostPopular />
     </>
   )
 }
