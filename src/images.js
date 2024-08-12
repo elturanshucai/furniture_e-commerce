@@ -4,6 +4,7 @@ import slide1 from './assets/images/hero/swiper/slide1.png'
 import slide2 from './assets/images/hero/swiper/slide2.png'
 import about from './assets/images/about/about.png'
 import discount from './assets/images/bg/discount.png'
+import contact from './assets/images/bg/contact.png'
 import product1 from './assets/images/products/product1.png'
 import product2 from './assets/images/products/product2.png'
 import product3 from './assets/images/products/product3.png'
@@ -27,7 +28,8 @@ export const aboutImage = {
 }
 
 export const customImages = {
-    discount
+    discount,
+    contact
 }
 
 export const productImages = {

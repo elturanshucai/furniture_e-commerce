@@ -1,0 +1,82 @@
+.contact {
+    padding: 120px 0;
+}
+
+.title {
+    font-family: 'Didot Title';
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.form__container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.form input,
+.form textarea {
+    border: 1px solid var(--dusty-rose);
+    border-radius: 10px;
+    padding: 18px 20px;
+    color: var(--primary);
+    resize: none;
+    font-family: 'Raleway';
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: var(--grey);
+    text-transform: uppercase;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline-style: groove;
+    outline-color: var(--primary);
+}
+
+.submit__button{
+    background-color: var(--primary);
+    color: var(--bg-main);
+    padding: 22px 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 300ms;
+}
+
+.submit__button:hover{
+    background-color: var(--btn-hover);
+}
+
+.img{
+    flex: 1;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:780px) {
+    .form__container{
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+    .title{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}

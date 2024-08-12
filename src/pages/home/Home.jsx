@@ -7,6 +7,7 @@ import DiscountSection from './container/discount/DiscountSection'
 import Products from './container/products/Products'
 import MostPopular from './container/popular/MostPopular'
 import Collections from './container/collections/Collections'
+import Contact from './container/contact/Contact'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Products />
       <MostPopular />
       <Collections />
+      <Contact />
     </>
   )
 }
