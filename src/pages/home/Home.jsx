@@ -6,6 +6,7 @@ import AboutSection from './container/about/AboutSection'
 import DiscountSection from './container/discount/DiscountSection'
 import Products from './container/products/Products'
 import MostPopular from './container/popular/MostPopular'
+import Collections from './container/collections/Collections'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <DiscountSection />
       <Products />
       <MostPopular />
+      <Collections />
     </>
   )
 }

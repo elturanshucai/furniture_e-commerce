@@ -5,7 +5,7 @@ const Slide = ({ data }) => {
     return (
         <article className={styles.slide}>
             <div className={styles.image}>
-                <img src={data.img} alt="furniture" />
+                <img src={data.img} alt={data.title} />
             </div>
             <p className={styles.title}>{data.title}</p>
         </article>

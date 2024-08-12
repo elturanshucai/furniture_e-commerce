@@ -1,6 +1,7 @@
 .popular{
     position: relative;
     padding: 0 30px;
+    margin-bottom: 120px;
 }
 
 .content{
@@ -50,5 +51,8 @@
 @media screen and (max-width:720px) {
     .nav__buttons{
         display: none;
+    }
+    .title{
+        font-size: 24px;
     }
 }
