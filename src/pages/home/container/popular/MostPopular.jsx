@@ -67,46 +67,27 @@ const data = [
 
 const MostPopular = () => {
     return (
-        <section className={styles.popular}>
+        <section className={`${styles.popular} container`}>
             <h2 className={styles.title}>
                 Most popular
             </h2>
-            {/* <div className={styles.content}> */}
-                <Swiper
-                    modules={[Navigation, Scrollbar]}
-                    navigation={{
-                        prevEl: '#prev-popular',
-                        nextEl: '#next-popular'
-                    }}
-                    className={styles.content}
-                    spaceBetween={30}
-                    scrollbar={{ draggable: true }}
-                    // breakpoints={{
-                    //     650: {
-                    //         slidesPerView:2
-                    //     },
-                    //     960: {
-                    //         slidesPerView: 3
-                    //     },
-                    //     1300: {
-                    //         slidesPerView: 4
-                    //     },
-                    //     1550: {
-                    //         slidesPerView: 5
-                    //     },
-                    //     1850: {
-                    //         slidesPerView: 6
-                    //     }
-                    // }}
-                    slidesPerView={"auto"}
-                >
-                    {data.map(data => (
-                        <SwiperSlide key={data.id} className={styles.slide}>
-                            <Card product={data} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            {/* </div> */}
+            <Swiper
+                modules={[Navigation, Scrollbar]}
+                navigation={{
+                    prevEl: '#prev-popular',
+                    nextEl: '#next-popular'
+                }}
+                className={styles.content}
+                spaceBetween={30}
+                scrollbar={{ draggable: true }}
+                slidesPerView={"auto"}
+            >
+                {data.map(data => (
+                    <SwiperSlide key={data.id} className={styles.slide}>
+                        <Card product={data} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
             <div className={styles.nav__buttons}>
                 <button id='prev-popular' className={styles.prev__button}>
                     <IoArrowBackOutline />

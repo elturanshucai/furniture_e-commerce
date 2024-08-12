@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} container`}>
       <section className={styles.top}>
         <h2 className={styles.title}>HomeDecor</h2>
         <article className={styles.info}>

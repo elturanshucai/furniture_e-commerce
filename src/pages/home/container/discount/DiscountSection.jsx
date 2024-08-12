@@ -5,7 +5,7 @@ import { ShopButton } from '../../../../components/buttons/ShopButton'
 
 const DiscountSection = () => {
     return (
-        <section className={styles.discount}>
+        <section className={`${styles.discount} container`}>
             <div className={styles.bg}>
                 <img src={customImages.discount} alt="discount" />
             </div>

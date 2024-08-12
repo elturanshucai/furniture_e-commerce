@@ -45,7 +45,7 @@ const swiperData = [
 
 const HomeSwiper = () => {
     return (
-        <section className={`${styles.swiper__container} hero__swiper`}>
+        <section className={`${styles.swiper__container} container`}>
             <Swiper
                 modules={[Navigation, Scrollbar, Pagination]}
                 navigation={{

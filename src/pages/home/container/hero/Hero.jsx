@@ -5,7 +5,7 @@ import { ShopButton } from '../../../../components/buttons/ShopButton'
 
 const Hero = () => {
     return (
-        <section className={styles.hero}>
+        <section className={`${styles.hero} container`}>
             <div className={styles.hero__left}>
                 <h2 className={styles.hero__title}>
                     THE FURNITURE THAT DEFINES YOU

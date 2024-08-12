@@ -38,7 +38,7 @@ const data = [
 const Collections = () => {
     return (
         <section className={styles.collections}>
-            <div className='container'>
+            <div className={`${styles.content} container`}>
                 <div className={styles.top}>
                     <h2 className={styles.title}>Collections</h2>
                     <Link to={"/collections"} className={styles.top__link}>see all</Link>
