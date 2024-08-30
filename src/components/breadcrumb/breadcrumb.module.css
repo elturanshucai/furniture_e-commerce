@@ -1,0 +1,24 @@
+.breadcrumb{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--black);
+}
+
+.line{
+    /* border: 1px solid var(--black); */
+    background-color: var(--black);
+    height: 16px;
+    width: 1px;
+    opacity: 0.5;
+    border-radius: 1px;
+}
+
+.breadcrumb a{
+    color: var(--black);
+    opacity: 0.5;
+}
+
+.breadcrumb a.last__link{
+    opacity: 1;
+}

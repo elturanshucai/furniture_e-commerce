@@ -6,6 +6,7 @@ import Register from './pages/register/Register'
 import NoPage from './pages/nopage/NoPage'
 import MainLayout from './layouts/Main/MainLayout'
 import Home from './pages/home/Home'
+import About from './pages/about/About'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
       <Route path='/' element={<MainLayout />}>
         <Route index element={<Home />} />
+        <Route path='/about' element={<About />} />
       </Route>
 
       <Route path='*' element={<NoPage />} />
